@@ -14,7 +14,8 @@
 </script>
 
 <style>
-
+  video, button {width: 100%}
 </style>
+
 <video autoplay ></video>
 <button class="button" on:click="{startCamera}" >Verify</button>
