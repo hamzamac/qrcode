@@ -21,10 +21,6 @@
 		text-align: center
 	}
 
-	footer{
-		background-color: blueviolet;
-		text-align: center
-	}
 </style>
 
 
@@ -35,6 +31,5 @@
 	<section>
 		<Camera />
 	</section>
-	<footer>Shewt {year}</footer>
 </div>
 
