@@ -35,5 +35,5 @@
   button {width: 100%}
 </style>
 
-<video width="250" autoplay poster="qr-code.svg"></video>
+<video width="250" autoplay poster="images/qr-code.svg"></video>
 <button class="button" on:click="{startCamera}" >Verify</button>
