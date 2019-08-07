@@ -1,5 +1,6 @@
 <script>
 	import Camera from './Camera.svelte';
+	import Spinner from "./Spinner.svelte";
 	export let name;
 	let year = new Date().getFullYear()
 </script>
@@ -30,6 +31,7 @@
 	</header>
 	<section>
 		<Camera />
+		<Spinner />ma
 	</section>
 </div>
 
