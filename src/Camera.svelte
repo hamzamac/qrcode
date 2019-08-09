@@ -1,5 +1,8 @@
-<script src="instascan.min.js">
+<script>
+  import Spinner from "./Spinner.svelte";
+
 	async function startCamera(){
+
 		let stream = null
     let constraints = {audio: false, video: true}
 
@@ -33,7 +36,24 @@
 
 <style>
   button {width: 100%}
+  .scanner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .scanner > *{
+    flex: 1;
+  }
+  .center {
+    align-self: center;
+    position: absolute;
+  }
 </style>
 
-<video width="250" autoplay poster="images/qr-code.svg"></video>
-<button class="button" on:click="{startCamera}" >Verify</button>
+<div class="scanner">
+  <video  width="100%" autoplay></video>
+  <div class="center">
+    <Spinner />
+  </div>
+</div>
+<button class="button" on:click="{startCamera}" >Start Scan</button>

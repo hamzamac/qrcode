@@ -4,10 +4,11 @@
 
 <style>
 .spinner {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
   background-color: green;
+  z-index: 20;
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
